@@ -1,5 +1,11 @@
-@use "sass:color"
+@use "sass:color";
 
-body {
-    background-color: aqua;
-}
+//---------------------------
+//-----COLOR VARIABLES-------
+//---------------------------
+
+$primary: #161514;
+
+
+// Font Color
+$text: #FFFDFA;

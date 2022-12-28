@@ -1,0 +1,8 @@
+@use "../basic" as *;
+
+
+body {
+    background-color: $primary;
+    color: $text;
+    font-family: $font-main;
+}
