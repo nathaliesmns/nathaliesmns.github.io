@@ -1,8 +1,52 @@
 @use "../basic" as *;
 
 
+//================================================
+//===== Mixin ====================================
+//================================================
+
+@mixin clearfix {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  
+  //================================================
+  //===== Reset ====================================
+  //================================================
+  
+  *, *:after, *:before {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: $primary;
     color: $text;
     font-family: $font-main;
+}
+
+
+.topbar {
+    width: $inner;
+    display: flex;
+    padding-block: $padding;
+}
+
+.topbar__logo {
+    width: 30rem;
+    display: block;
 }
